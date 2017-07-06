@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<ruleset name="WordPress-AEPO-LSX-Child-Theme">
+	<exclude-pattern>*/vendor/*</exclude-pattern>
+	<rule ref="WordPress">
+		<exclude name="Generic.ControlStructures.InlineControlStructure.NotAllowed" />
+		<exclude name="Generic.WhiteSpace.ScopeIndent.IncorrectExact" />
+		<exclude name="WordPress.VIP" />
+		<exclude name="Generic.Commenting" />
+		<exclude name="Squiz.Commenting" />
+	</rule>
+</ruleset>

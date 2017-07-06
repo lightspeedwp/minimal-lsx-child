@@ -1,3 +1,6 @@
+[![built with gulp.js](https://img.shields.io/badge/built%20with-gulp.js-green.svg)](http://gulpjs.com/)
+[![build status](https://travis-ci.org/lightspeeddevelopment/aepo-lsx-child.svg?branch=master)](https://travis-ci.org/lightspeeddevelopment/aepo-lsx-child)
+
 # AEPO
 
 AEPO LSX Child Theme.
