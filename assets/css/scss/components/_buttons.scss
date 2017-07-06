@@ -1,0 +1,23 @@
+.btn {
+	&,
+	&:active,
+	&:visited {
+		.lsx & {
+			box-shadow: none;
+			font-weight: normal;
+			left: 0;
+			min-width: 220px;
+			top: 0;
+		}
+	}
+
+	&.cta-btn {
+		&,
+		&:active,
+		&:visited {
+			font-weight: 900;
+			border: 1px solid #ECEFF1; // @TODO - Move to [LSX] Customizer
+			box-shadow: 0 0 25px 0 #DFDFDF;
+		}
+	}
+}

@@ -27,6 +27,8 @@ h3, .h3 { font-family: 'Avenir Book'; }
 
 .content-area blockquote:before, .widget-area blockquote:before { font-family: 'Avenir'; }
 
+.btn { font-family: 'Avenir'; }
+
 .blog article.post .entry-title .label-sticky, .blog article.page .entry-title .label-sticky, .archive article.post .entry-title .label-sticky, .archive article.page .entry-title .label-sticky, .search.search-results article.post .entry-title .label-sticky, .search.search-results article.page .entry-title .label-sticky { font-family: 'Helvetica Neue'; }
 
 #respond .comment-reply-title > small { font-family: 'Helvetica Neue'; }
@@ -35,13 +37,15 @@ h3, .h3 { font-family: 'Avenir Book'; }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { letter-spacing: 5px; text-transform: uppercase; }
 
-h1, .h1 { font-size: 4.4rem; font-weight: 900; }
+h1, .h1 { font-size: 44px; font-weight: 900; }
 
-h2, .h2 { font-size: 2.4rem; }
-
-h3, .h3 { font-size: 2rem; }
+h3, .h3 { font-size: 24px; }
 
 h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 { font-weight: normal; }
+
+.lsx .btn, .lsx .btn:active, .lsx .btn:visited { box-shadow: none; font-weight: normal; left: 0; min-width: 220px; top: 0; }
+
+.btn.cta-btn, .btn.cta-btn:active, .btn.cta-btn:visited { font-weight: 900; border: 1px solid #ECEFF1; box-shadow: 0 0 25px 0 #DFDFDF; }
 
 @media (min-width: 1200px) { #masthead > .container { min-height: 72px; } }
 
@@ -71,5 +75,24 @@ h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 { font-weight: normal; }
 .footer-navigation > ul > li > a { display: inline-block; padding: 4px 0; }
 
 .footer-navigation > ul > li:not(:last-child):after { display: none; }
+
+#home-widgets > .widget { margin-bottom: 10rem; }
+
+#home-widgets > .widget:nth-child(even) { background-color: #FAFBFC; margin-left: -999rem; margin-right: -999rem; padding: 10rem 999rem; }
+
+#home-widgets > .widget:nth-child(even):last-child { margin-bottom: 0; }
+
+@media (min-width: 992px) { #home-widgets > .widget.widget_text .aepo-narrow-text { margin: 0 auto; max-width: 670px; } }
+
+#home-widgets > .widget.widget_text .aepo-buttons-group { margin-top: 2.8rem; }
+
+@media (max-width: 767px) { #home-widgets > .widget.widget_text .aepo-buttons-group .text-left, #home-widgets > .widget.widget_text .aepo-buttons-group .text-right { text-align: center; }
+  #home-widgets > .widget.widget_text .aepo-buttons-group [class*="col-"] + [class*="col-"] { margin-top: 2.8rem; } }
+
+#home-widgets h3, #home-widgets .widget-title { font-size: 24px; margin-bottom: 2.8rem; }
+
+#home-widgets h3:after, #home-widgets .widget-title:after { display: none; }
+
+.content-area, .widget-area { font-weight: 300; }
 
 /*# sourceMappingURL=maps/custom.css.map */

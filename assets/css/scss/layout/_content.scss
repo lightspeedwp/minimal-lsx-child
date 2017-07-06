@@ -1,0 +1,51 @@
+#home-widgets {
+	& > .widget {
+		margin-bottom: 10rem;
+
+		&:nth-child(even) {
+			background-color: #FAFBFC; // @TODO - Move to [LSX] Customizer
+			margin-left: -999rem;
+			margin-right: -999rem;
+			padding: 10rem 999rem;
+		}
+
+		&:nth-child(even):last-child {
+			margin-bottom: 0;
+		}
+
+		&.widget_text {
+			.aepo-narrow-text {
+				@include media('>=tablet') {
+					margin: 0 auto;
+					max-width: 670px;
+				}
+			}
+
+			.aepo-buttons-group {
+				margin-top: 2.8rem;
+
+				@include media('<phone') {
+					.text-left,
+					.text-right { text-align: center; }
+
+					[class*="col-"] + [class*="col-"] {
+						margin-top: 2.8rem;
+					}
+				}
+			}
+		}
+	}
+
+	h3,
+	.widget-title {
+		font-size: 24px;
+		margin-bottom: 2.8rem;
+
+		&:after { display: none; }
+	}
+}
+
+.content-area,
+.widget-area {
+	font-weight: 300;
+}
