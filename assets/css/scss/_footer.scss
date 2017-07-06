@@ -1,0 +1,51 @@
+.content-info {
+	font-size: 10px;
+	letter-spacing: 1.5px;
+	padding: 7rem 0 10.5rem 0;
+
+	& > .container {
+		& > .row {
+			& > div[class*='col-'] {
+				display: block;
+			}
+		}
+	}
+
+	.credit {
+		&.credit-float { text-align: center; }
+
+		&:before {
+			background: transparent url('../images/logo-footer@2x.png') no-repeat center center;
+			background-size: 28px 26px;
+			content: '';
+			display: block;
+			height: 26px;
+			margin-bottom: 3.5rem;
+			margin-left: calc(50% - 14px);
+			width: 28px;
+		}
+	}
+}
+
+.footer-navigation {
+	text-transform: uppercase;
+
+	& > ul {
+		justify-content: center;
+		padding: 3.5rem 0 0 0;
+
+		& > li {
+			padding-left: 15px;
+			padding-right: 15px;
+
+			& > a {
+				display: inline-block;
+				padding: 4px 0;
+			}
+
+			&:not(:last-child):after {
+				display: none;
+			}
+		}
+	}
+}

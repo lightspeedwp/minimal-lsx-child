@@ -1,3 +1,73 @@
 /** AEPO styles. @package aepo-lsx-child */
+body { font-size: 14px; }
+
+@font-face { font-family: 'Avenir'; src: url("../fonts/Avenir-Light.woff2") format("woff2"), url("../fonts/Avenir-Light.woff") format("woff"), url("../fonts/Avenir-Light.ttf") format("truetype"); font-weight: 300; font-style: normal; }
+
+@font-face { font-family: 'Avenir'; src: url("../fonts/Avenir-Roman.woff2") format("woff2"), url("../fonts/Avenir-Roman.woff") format("woff"), url("../fonts/Avenir-Roman.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'Avenir'; src: url("../fonts/Avenir-Black.woff2") format("woff2"), url("../fonts/Avenir-Black.woff") format("woff"), url("../fonts/Avenir-Black.ttf") format("truetype"); font-weight: 900; font-style: normal; }
+
+@font-face { font-family: 'Avenir Book'; src: url("../fonts/Avenir-Book.woff2") format("woff2"), url("../fonts/Avenir-Book.woff") format("woff"), url("../fonts/Avenir-Book.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'Helvetica Neue'; src: url("../fonts/HelveticaNeue-Light.woff2") format("woff2"), url("../fonts/HelveticaNeue-Light.woff") format("woff"), url("../fonts/HelveticaNeue-Light.ttf") format("truetype"); font-weight: 300; font-style: normal; }
+
+@font-face { font-family: 'Helvetica Neue'; src: url("../fonts/HelveticaNeue-LightItalic.woff2") format("woff2"), url("../fonts/HelveticaNeue-LightItalic.woff") format("woff"), url("../fonts/HelveticaNeue-LightItalic.ttf") format("truetype"); font-weight: 300; font-style: italic; }
+
+@font-face { font-family: 'Helvetica Neue'; src: url("../fonts/HelveticaNeue-Medium.woff2") format("woff2"), url("../fonts/HelveticaNeue-Medium.woff") format("woff"), url("../fonts/HelveticaNeue-Medium.ttf") format("truetype"); font-weight: 500; font-style: normal; }
+
+@font-face { font-family: 'Helvetica Neue'; src: url("../fonts/HelveticaNeue.woff2") format("woff2"), url("../fonts/HelveticaNeue.woff") format("woff"), url("../fonts/HelveticaNeue.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'Helvetica Neue'; src: url("../fonts/HelveticaNeue-Bold.woff2") format("woff2"), url("../fonts/HelveticaNeue-Bold.woff") format("woff"), url("../fonts/HelveticaNeue-Bold.ttf") format("truetype"); font-weight: bold; font-style: normal; }
+
+body { font-family: 'Helvetica Neue'; }
+
+h1, h2, h4, h5, h6, .h1, .h2, .h4, .h5, .h6 { font-family: 'Avenir'; }
+
+h3, .h3 { font-family: 'Avenir Book'; }
+
+.content-area blockquote:before, .widget-area blockquote:before { font-family: 'Avenir'; }
+
+.blog article.post .entry-title .label-sticky, .blog article.page .entry-title .label-sticky, .archive article.post .entry-title .label-sticky, .archive article.page .entry-title .label-sticky, .search.search-results article.post .entry-title .label-sticky, .search.search-results article.page .entry-title .label-sticky { font-family: 'Helvetica Neue'; }
+
+#respond .comment-reply-title > small { font-family: 'Helvetica Neue'; }
+
+#comments .media-list .media .media-heading { font-family: 'Helvetica Neue'; }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { letter-spacing: 5px; text-transform: uppercase; }
+
+h1, .h1 { font-size: 4.4rem; font-weight: 900; }
+
+h2, .h2 { font-size: 2.4rem; }
+
+h3, .h3 { font-size: 2rem; }
+
+h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 { font-weight: normal; }
+
+@media (max-width: 1199px) { #masthead .wrapper-toggle .mobile-menu-title { font-size: 12px; font-weight: normal; letter-spacing: 1.5px; }
+  #masthead .primary-navbar > .nav { letter-spacing: 1.5px; text-transform: uppercase; }
+  #masthead .primary-navbar > .nav > .menu-item > a, #masthead .primary-navbar > .nav > .menu-item.active > a { font-size: 12px; }
+  #masthead .primary-navbar > .nav > .menu-item.active > a { font-weight: bold; } }
+
+@media (min-width: 1200px) { #masthead .primary-navbar > .nav { letter-spacing: 1.5px; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; text-transform: uppercase; }
+  #masthead .primary-navbar > .nav > .menu-item > a, #masthead .primary-navbar > .nav > .menu-item.active > a { font-size: 12px; }
+  #masthead .primary-navbar > .nav > .menu-item.active > a { font-weight: bold; } }
+
+.content-info { font-size: 10px; letter-spacing: 1.5px; padding: 7rem 0 10.5rem 0; }
+
+.content-info > .container > .row > div[class*='col-'] { display: block; }
+
+.content-info .credit.credit-float { text-align: center; }
+
+.content-info .credit:before { background: transparent url("../images/logo-footer@2x.png") no-repeat center center; background-size: 28px 26px; content: ''; display: block; height: 26px; margin-bottom: 3.5rem; margin-left: calc(50% - 14px); width: 28px; }
+
+.footer-navigation { text-transform: uppercase; }
+
+.footer-navigation > ul { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; padding: 3.5rem 0 0 0; }
+
+.footer-navigation > ul > li { padding-left: 15px; padding-right: 15px; }
+
+.footer-navigation > ul > li > a { display: inline-block; padding: 4px 0; }
+
+.footer-navigation > ul > li:not(:last-child):after { display: none; }
 
 /*# sourceMappingURL=maps/custom.css.map */

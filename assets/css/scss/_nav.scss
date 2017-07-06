@@ -1,0 +1,52 @@
+@include media('<desktop') {
+	#masthead {
+		.wrapper-toggle {
+			.mobile-menu-title {
+				font-size: 12px;
+				font-weight: normal;
+				letter-spacing: 1.5px;
+			}
+		}
+
+		.primary-navbar {
+			& > .nav {
+				letter-spacing: 1.5px;
+				text-transform: uppercase;
+
+				& > .menu-item {
+					& > a,
+					&.active > a {
+						font-size: 12px;
+					}
+
+					&.active > a {
+						font-weight: bold;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media('>=desktop') {
+	#masthead {
+		.primary-navbar {
+			& > .nav {
+				letter-spacing: 1.5px;
+				justify-content: flex-end;
+				text-transform: uppercase;
+
+				& > .menu-item {
+					& > a,
+					&.active > a {
+						font-size: 12px;
+					}
+
+					&.active > a {
+						font-weight: bold;
+					}
+				}
+			}
+		}
+	}
+}
