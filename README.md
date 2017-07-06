@@ -1,5 +1,4 @@
 # AEPO
-## aepo-lsx-child
 
 AEPO LSX Child Theme.
 
