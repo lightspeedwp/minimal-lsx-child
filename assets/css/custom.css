@@ -43,6 +43,8 @@ h3, .h3 { font-size: 2rem; }
 
 h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 { font-weight: normal; }
 
+@media (min-width: 1200px) { #masthead > .container { min-height: 72px; } }
+
 @media (max-width: 1199px) { #masthead .wrapper-toggle .mobile-menu-title { font-size: 12px; font-weight: normal; letter-spacing: 1.5px; }
   #masthead .primary-navbar > .nav { letter-spacing: 1.5px; text-transform: uppercase; }
   #masthead .primary-navbar > .nav > .menu-item > a, #masthead .primary-navbar > .nav > .menu-item.active > a { font-size: 12px; }

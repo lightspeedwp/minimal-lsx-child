@@ -1,0 +1,7 @@
+#masthead {
+	& > .container {
+		@include media('>=desktop') {
+			min-height: 72px;
+		}
+	}
+}

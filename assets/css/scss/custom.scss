@@ -4,12 +4,14 @@
  * @package aepo-lsx-child
  */
 
-@import 'include-media';
+@import 'global/mixins/include-media';
 
-@import 'scaffolding';
-@import 'font-face';
-@import 'fonts';
+@import 'base/scaffolding';
+@import 'base/font-face';
+@import 'base/fonts';
 
-@import 'typography';
-@import 'nav';
-@import 'footer';
+@import 'components/typography';
+
+@import 'layout/header';
+@import 'layout/nav';
+@import 'layout/footer';
