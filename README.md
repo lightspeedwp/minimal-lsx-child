@@ -5,7 +5,7 @@ AEPO LSX Child Theme.
 ## Changelog
 
 ### 1.0.0 - 06/07/17
-* First Version
+- First Version
 
 ## Setup
 
