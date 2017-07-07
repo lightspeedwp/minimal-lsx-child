@@ -149,13 +149,13 @@ h2, h3, h5, h6, .h2, .h3, .h5, .h6 { font-weight: normal; }
 
 @media (min-width: 992px) { .aepo-entry-slot { transition: -webkit-transform 250ms ease-in-out; transition: transform 250ms ease-in-out; transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out; }
   .aepo-entry-slot:hover { -webkit-transform: scale(1.1); transform: scale(1.1); }
-  .aepo-entry-slot:hover:before { background-color: rgba(0, 0, 0, 0.5); } }
+  .aepo-entry-slot:hover:before { background-color: rgba(0, 0, 0, 0.3); } }
 
 @media (min-width: 992px) { .aepo-entry-slot { margin-top: 0; } }
 
-.aepo-entry-slot:before { bottom: 0; content: ''; background-color: rgba(0, 0, 0, 0.5); right: 0; position: absolute; left: 0; top: 0; }
+.aepo-entry-slot:before { bottom: 0; content: ''; background-color: rgba(0, 0, 0, 0.3); right: 0; position: absolute; left: 0; top: 0; }
 
-@media (min-width: 992px) { .aepo-entry-slot:before { background-color: rgba(0, 0, 0, 0.3); transition: background-color 250ms ease-in-out; } }
+@media (min-width: 992px) { .aepo-entry-slot:before { background-color: rgba(0, 0, 0, 0.1); transition: background-color 250ms ease-in-out; } }
 
 .aepo-entry-slot > * { position: relative; width: 100%; }
 
