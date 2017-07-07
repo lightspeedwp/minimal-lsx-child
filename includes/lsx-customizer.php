@@ -106,6 +106,13 @@ function lsx_aepo_customizer_colour_selectors_body( $css, $colors ) {
 		@include customizer-aepo-body-colours (
 			$bg_section: ' . $colors['body_section_full_background_color'] . '
 		);
+
+		/**
+		 * LSX Customizer - Body (LSX Testimonials) (AEPO)
+		 */
+		@include customizer-aepo-lsx-testimonials-body-colours (
+			$small: ' . $colors['body_text_small_color'] . '
+		);
 	';
 
 	return $css;

@@ -29,3 +29,9 @@
 		}
 	}
 }
+
+@mixin customizer-aepo-lsx-testimonials-body-colours($small: #313F48) {
+	.content-area {
+		.lsx-testimonials-content { color: $small; }
+	}
+}

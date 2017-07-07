@@ -1,0 +1,143 @@
+#home-widgets {
+	& > .widget {
+		.aepo-buttons-wrapper {
+			margin-top: 2.8rem;
+
+			@include media('<phone') {
+				.text-left,
+				.text-right { text-align: center; }
+
+				[class*="col-"] + [class*="col-"] {
+					margin-top: 2.8rem;
+				}
+			}
+		}
+
+		.aepo-usp-wrapper {
+			margin-bottom: -6rem;
+			margin-top: -2.8rem;
+
+			@include media('<phone') {
+				[class*="col-"] + [class*="col-"] {
+					margin-top: 0;
+				}
+			}
+		}
+
+		.aepo-usp {
+			margin-bottom: 6rem;
+			margin-top: 6rem;
+			padding-left: 75px;
+			position: relative;
+
+			&:before {
+				background-position: center center;
+				background-repeat: no-repeat;
+				bottom: 0;
+				content: '';
+				left: 0;
+				position: absolute;
+				top: 0;
+				width: 60px;
+			}
+		}
+
+		.aepo-usp-contractor {
+			&:before {
+				background-image: url(../images/contractor_icn@2x.png);
+				background-size: 31px 39px;
+			}
+		}
+
+		.aepo-usp-fleet {
+			&:before {
+				background-image: url(../images/fleet_icn@2x.png);
+				background-size: 42px 42px;
+			}
+		}
+
+		.aepo-usp-camera {
+			&:before {
+				background-image: url(../images/camera_icn@2x.png);
+				background-size: 51px 28px;
+			}
+		}
+
+		.aepo-usp-helmet {
+			&:before {
+				background-image: url(../images/helmet_icn@2x.png);
+				background-size: 33px 31px;
+			}
+		}
+
+		.aepo-client-wrapper {
+			margin-top: 7.2rem;
+			text-align: center;
+
+			@include media('>=phone') {
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: space-between;
+				text-align: none;
+			}
+		}
+
+		.aepo-client {
+			& + .aepo-client {
+				margin-top: 7.2rem;
+
+				@include media('>=phone') {
+					margin-top: 0;
+				}
+			}
+
+			a {
+				background-position: center center;
+				background-repeat: no-repeat;
+				display: inline-block;
+				opacity: 0.35;
+				text-indent: -9999px;
+
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
+
+		.aepo-client-fox {
+			a {
+				background-image: url(../images/fox_logo@2x.png);
+				background-size: 115px 38px;
+				height: 38px;
+				width: 115px;
+			}
+		}
+
+		.aepo-client-hbo {
+			a {
+				background-image: url(../images/hbo_logo@2x.png);
+				background-size: 97px 39px;
+				height: 39px;
+				width: 97px;
+			}
+		}
+
+		.aepo-client-rapha {
+			a {
+				background-image: url(../images/rapha_logo@2x.png);
+				background-size: 131px 57px;
+				height: 57px;
+				width: 131px;
+			}
+		}
+
+		.aepo-client-apple {
+			a {
+				background-image: url(../images/apple_logo@2x.png);
+				background-size: 39px 47px;
+				height: 47px;
+				width: 39px;
+			}
+		}
+	}
+}
