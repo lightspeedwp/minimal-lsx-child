@@ -62,7 +62,7 @@ h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 { font-weight: normal; }
   #masthead .primary-navbar > .nav > .menu-item > a, #masthead .primary-navbar > .nav > .menu-item.active > a { font-size: 12px; }
   #masthead .primary-navbar > .nav > .menu-item.active > a { font-weight: bold; } }
 
-.content-info { font-size: 10px; letter-spacing: 1.5px; padding: 7rem 0 10.5rem 0; }
+.content-info { font-size: 10px; letter-spacing: 1.5px; padding: 7rem 0 10rem 0; }
 
 .content-info > .container > .row > div[class*='col-'] { display: block; }
 
@@ -92,7 +92,7 @@ h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 { font-weight: normal; }
 
 .content-area, .widget-area { font-weight: 300; }
 
-#home-widgets > .widget .aepo-buttons-wrapper { margin-top: 2.8rem; }
+#home-widgets > .widget .aepo-buttons-wrapper { margin-top: 5rem; }
 
 @media (max-width: 767px) { #home-widgets > .widget .aepo-buttons-wrapper .text-left, #home-widgets > .widget .aepo-buttons-wrapper .text-right { text-align: center; }
   #home-widgets > .widget .aepo-buttons-wrapper [class*="col-"] + [class*="col-"] { margin-top: 2.8rem; } }
