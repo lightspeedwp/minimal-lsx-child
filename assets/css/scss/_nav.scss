@@ -4,13 +4,13 @@
 			.mobile-menu-title {
 				font-size: 12px;
 				font-weight: normal;
-				letter-spacing: 1.5px;
+				letter-spacing: $letter-spacing-medium;
 			}
 		}
 
 		.primary-navbar {
 			& > .nav {
-				letter-spacing: 1.5px;
+				letter-spacing: $letter-spacing-medium;
 				text-transform: uppercase;
 
 				& > .menu-item {
@@ -32,7 +32,7 @@
 	#masthead {
 		.primary-navbar {
 			& > .nav {
-				letter-spacing: 1.5px;
+				letter-spacing: $letter-spacing-medium;
 				justify-content: flex-end;
 				text-transform: uppercase;
 

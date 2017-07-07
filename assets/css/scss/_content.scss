@@ -1,6 +1,6 @@
 #home-widgets {
 	& > .widget {
-		margin-bottom: 10rem;
+		margin-bottom: $gap-large;
 
 		&:nth-child(even):last-child {
 			margin-bottom: 0;
@@ -9,14 +9,14 @@
 		&:nth-child(even) {
 			margin-left: -999rem;
 			margin-right: -999rem;
-			padding: 10rem 999rem;
+			padding: $gap-large 999rem;
 		}
 	}
 
 	h3,
 	.widget-title {
-		font-size: 24px;
-		margin-bottom: 2.8rem;
+		font-size: $header-h3-size;
+		margin-bottom: $gap;
 
 		&:after { display: none; }
 	}

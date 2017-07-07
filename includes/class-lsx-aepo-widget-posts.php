@@ -98,20 +98,20 @@ if ( ! class_exists( 'LSX_AEPO_Widget_Posts' ) ) {
 					}
 
 					echo '<div class="col-xs-12 col-md-4">';
-					echo '<div class="aepo-entry-slot" style="background-image:url(' . esc_attr( $image_src ) . ')">';
+					echo '<div class="aepo-post-slot" style="background-image:url(' . esc_attr( $image_src ) . ')">';
 
-					the_title( '<h4 class="aepo-entry-title">', '</h4>' );
+					the_title( '<h4 class="aepo-post-title">', '</h4>' );
 
 					printf(
-						'<time class="aepo-entry-date entry-date published updated" datetime="%1$s">%2$s</time>',
+						'<time class="aepo-post-date entry-date published updated" datetime="%1$s">%2$s</time>',
 						esc_attr( get_the_date( 'c' ) ),
 						get_the_date()
 					);
 
-					echo '<div class="aepo-entry-content">' . wp_kses_post( get_the_excerpt() ) . '</div>';
+					echo '<div class="aepo-post-content">' . wp_kses_post( get_the_excerpt() ) . '</div>';
 
 					printf(
-						'<a href="%1$s" class="aepo-entry-read-more">%2$s</a>',
+						'<a href="%1$s" class="aepo-post-read-more">%2$s</a>',
 						esc_url( get_permalink() ),
 						esc_html__( 'Read all' )
 					);

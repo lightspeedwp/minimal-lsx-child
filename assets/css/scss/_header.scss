@@ -1,7 +1,9 @@
 #masthead {
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+
 	& > .container {
 		@include media('>=desktop') {
-			min-height: 72px;
+			min-height: 72px; // design
 		}
 	}
 }

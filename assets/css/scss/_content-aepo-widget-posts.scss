@@ -1,0 +1,101 @@
+.aepo-posts-wrapper {
+	margin-top: $gap-medium;
+
+	.row {
+		@include media('>=tablet') {
+			display: flex;
+		}
+
+		[class*="col-"] {
+			display: flex;
+			flex-direction: row;
+		}
+	}
+}
+
+.aepo-post-slot {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: ($bootstrap-column-spacing * 2);
+	min-height: 300px; // design
+	padding: $gap-elements;
+	position: relative;
+	text-align: center;
+	width: 100%;
+
+	.aepo-posts-wrapper [class*="col-"]:first-child & {
+		margin-top: 0;
+	}
+
+	@include media('>=tablet') {
+		transition: transform 250ms ease-in-out;
+
+		&:hover {
+			transform: scale(1.1);
+
+			&:before {
+				background-color: rgba(0, 0, 0, 0.3);
+			}
+		}
+	}
+
+	@include media('>=tablet') {
+		margin-top: 0;
+	}
+
+	&:before {
+		bottom: 0;
+		content: '';
+		background-color: rgba(0, 0, 0, 0.3);
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+
+		@include media('>=tablet') {
+			background-color: rgba(0, 0, 0, 0.1);
+			transition: background-color 250ms ease-in-out;
+		}
+	}
+
+	& > * {
+		position: relative;
+		width: 100%;
+	}
+}
+
+.aepo-post-date,
+.aepo-post-content,
+.aepo-post-read-more {
+	@include media('>=tablet') {
+		display: none;
+
+		.aepo-post-slot:hover & {
+			display: block;
+		}
+	}
+}
+
+h4.aepo-post-title {
+	margin-bottom: 0;
+}
+
+.aepo-post-date {
+	font-weight: 500;
+	margin-bottom: 5px;
+	opacity: 0.5;
+}
+
+.aepo-post-content {
+	font-weight: normal;
+}
+
+.aepo-post-read-more {
+	font-weight: 700;
+	margin-top: $gap-elements;
+	text-transform: uppercase;
+}

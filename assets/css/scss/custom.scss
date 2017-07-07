@@ -5,6 +5,7 @@
  */
 
 // Global
+@import 'variables';
 @import 'include-media';
 
 // Base
@@ -22,5 +23,7 @@
 @import 'footer';
 @import 'content';
 
-@import 'content-aepo';
-@import 'content-lsx-testimonials';
+@import 'content-aepo-banner';
+@import 'content-aepo-widget-text';
+@import 'content-aepo-widget-posts';
+@import 'content-aepo-widget-testimonials';

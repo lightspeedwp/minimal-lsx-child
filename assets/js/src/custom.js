@@ -17,7 +17,37 @@ var lsx_aepo = Object.create( null );
 		windowWidth  = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
 	/**
-	 * Upcate testimonials slick slider (remove arrows)
+	 * Create homepage banner Slick Slider
+	 *
+	 * @package    aepo-lsx-child
+	 * @subpackage scripts
+	 */
+	lsx_aepo.create_homepage_slick_slider = function() {
+		$( '.aepo-slider' ).slick({
+			draggable: false,
+			infinite: true,
+			slidesToScroll: 1,
+			swipe: false,
+			cssEase: 'ease-out',
+			responsive: [{
+				breakpoint: 992,
+				settings: {
+					draggable: true,
+					swipe: true
+				}
+			}, {
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+					draggable: true,
+					swipe: true
+				}
+			}]
+		});
+	};
+
+	/**
+	 * Update testimonials slick slider (remove arrows)
 	 *
 	 * @package    aepo-lsx-child
 	 * @subpackage scripts
@@ -35,6 +65,7 @@ var lsx_aepo = Object.create( null );
 	 */
 	$document.ready( function() {
 
+		lsx_aepo.create_homepage_slick_slider();
 		lsx_aepo.update_testimonials_slick_slider();
 
 	} );

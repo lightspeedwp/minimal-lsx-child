@@ -1,7 +1,7 @@
 .content-info {
 	font-size: 10px;
-	letter-spacing: 1.5px;
-	padding: 7rem 0 10rem 0;
+	letter-spacing: $letter-spacing-medium;
+	padding: $gap-medium 0 $gap-large 0;
 
 	& > .container {
 		& > .row {
@@ -20,8 +20,8 @@
 			content: '';
 			display: block;
 			height: 26px;
-			margin-bottom: 3.5rem;
-			margin-left: calc(50% - 14px);
+			margin-bottom: ($gap-medium / 2);
+			margin-left: calc(50% - (28px / 2));
 			width: 28px;
 		}
 	}
@@ -32,7 +32,7 @@
 
 	& > ul {
 		justify-content: center;
-		padding: 3.5rem 0 0 0;
+		padding: ($gap-medium / 2) 0 0 0;
 
 		& > li {
 			padding-left: 15px;

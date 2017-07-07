@@ -6,14 +6,14 @@
 			}
 		}
 
-		.aepo-entry-slot {
+		.aepo-post-slot {
 			h4 {
 				color: white;
 			}
 		}
 	}
 
-	.aepo-entry-slot {
+	.aepo-post-slot {
 		color: white;
 
 		a:not(.btn) {
@@ -29,6 +29,11 @@
 				color: white;
 			}
 		}
+	}
+
+	.aepo-slider-slide-title,
+	.aepo-slider-slide-tagline {
+		color: white;
 	}
 }
 

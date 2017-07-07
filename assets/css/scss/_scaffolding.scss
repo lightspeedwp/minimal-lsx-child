@@ -1,6 +1,6 @@
 .container {
 	@include media('>=desktop') {
-		width: 970px;
+		width: $bootstrap-lg-container-size;
 	}
 }
 
@@ -16,17 +16,17 @@
 .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10,
 .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11,
 .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: $bootstrap-column-spacing;
+	padding-right: $bootstrap-column-spacing;
 }
 
 .row {
-	margin-left: -10px;
-	margin-right: -10px;
+	margin-left: -$bootstrap-column-spacing;
+	margin-right: -$bootstrap-column-spacing;
 }
 
 body {
 	font-size: 14px;
-	letter-spacing: 0.5px;
+	letter-spacing: $letter-spacing;
 	line-height: 1.7;
 }
