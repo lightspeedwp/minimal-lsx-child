@@ -1,0 +1,31 @@
+@mixin customizer-aepo-body-colours ($bg_section: #FAFBFC) {
+	#home-widgets {
+		& > .widget {
+			&:nth-child(even) {
+				background-color: $bg_section;
+			}
+		}
+	}
+}
+
+@mixin customizer-aepo-button-colours ($shadow: #ECEFF1) {
+	.btn {
+		&,
+		&:active,
+		&:visited {
+			border: 1px solid $shadow;
+		}
+	}
+}
+
+@mixin customizer-aepo-button-cta-colours ($shadow: #DFDFDF) {
+	.btn {
+		&.cta-btn {
+			&,
+			&:active,
+			&:visited {
+				box-shadow: 0 0 25px 0 $shadow;
+			}
+		}
+	}
+}

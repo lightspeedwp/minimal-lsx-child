@@ -45,7 +45,7 @@ h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 { font-weight: normal; }
 
 .lsx .btn, .lsx .btn:active, .lsx .btn:visited { box-shadow: none; font-weight: normal; left: 0; min-width: 220px; top: 0; }
 
-.btn.cta-btn, .btn.cta-btn:active, .btn.cta-btn:visited { font-weight: 900; border: 1px solid #ECEFF1; box-shadow: 0 0 25px 0 #DFDFDF; }
+.btn.cta-btn, .btn.cta-btn:active, .btn.cta-btn:visited { font-weight: 900; }
 
 @media (min-width: 1200px) { #masthead > .container { min-height: 72px; } }
 
@@ -78,7 +78,7 @@ h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 { font-weight: normal; }
 
 #home-widgets > .widget { margin-bottom: 10rem; }
 
-#home-widgets > .widget:nth-child(even) { background-color: #FAFBFC; margin-left: -999rem; margin-right: -999rem; padding: 10rem 999rem; }
+#home-widgets > .widget:nth-child(even) { margin-left: -999rem; margin-right: -999rem; padding: 10rem 999rem; }
 
 #home-widgets > .widget:nth-child(even):last-child { margin-bottom: 0; }
 

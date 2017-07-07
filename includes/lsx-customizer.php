@@ -1,6 +1,6 @@
 <?php
 /**
- * New colours scheme
+ * New colours scheme.
  *
  * @package     aepo-lsx-child
  * @subpackage	lsx-customizer
@@ -14,13 +14,13 @@ function lsx_aepo_customizer_colour_choices( $array ) {
 			'button_background_hover_color' => '#989fA4',
 			'button_text_color'             => '#54636D',
 			'button_text_color_hover'       => '#FFFFFF',
-			'button_shadow'                 => '#54636D',
+			'button_shadow'                 => '#ECEFF1',
 
 			'button_cta_background_color'       => '#FFFFFF',
 			'button_cta_background_hover_color' => '#404f5A',
 			'button_cta_text_color'             => '#313F48',
 			'button_cta_text_color_hover'       => '#FFFFFF',
-			'button_cta_shadow'                 => '#404f5A',
+			'button_cta_shadow'                 => '#DFDFDF',
 
 			'top_menu_background_color'          => $array['default']['colors']['top_menu_background_color'],
 			'top_menu_link_color'                => $array['default']['colors']['top_menu_link_color'],
@@ -89,3 +89,72 @@ function lsx_aepo_customizer_colour_choices( $array ) {
 }
 
 add_filter( 'lsx_customizer_colour_choices', 'lsx_aepo_customizer_colour_choices', 11 );
+
+/**
+ * Handle body colours that might be change by LSX Customiser.
+ *
+ * @package     aepo-lsx-child
+ * @subpackage	lsx-customizer
+ */
+function lsx_aepo_customizer_colour_selectors_body( $css, $colors ) {
+	$css .= '
+		@import "' . LSX_AEPO_PATH . '/assets/css/scss/customizer-colours";
+
+		/**
+		 * LSX Customizer - Body (AEPO)
+		 */
+		@include customizer-aepo-body-colours (
+			$bg_section: ' . $colors['body_section_full_background_color'] . '
+		);
+	';
+
+	return $css;
+}
+
+add_filter( 'lsx_customizer_colour_selectors_body', 'lsx_aepo_customizer_colour_selectors_body', 15, 2 );
+
+/**
+ * Handle body colours that might be change by LSX Customiser.
+ *
+ * @package     aepo-lsx-child
+ * @subpackage	lsx-customizer
+ */
+function lsx_aepo_customizer_colour_selectors_button( $css, $colors ) {
+	$css .= '
+		@import "' . LSX_AEPO_PATH . '/assets/css/scss/customizer-colours";
+
+		/**
+		 * LSX Customizer - Button (AEPO)
+		 */
+		@include customizer-aepo-button-colours (
+			$shadow: ' . $colors['button_shadow'] . '
+		);
+	';
+
+	return $css;
+}
+
+add_filter( 'lsx_customizer_colour_selectors_button', 'lsx_aepo_customizer_colour_selectors_button', 15, 2 );
+
+/**
+ * Handle body colours that might be change by LSX Customiser.
+ *
+ * @package     aepo-lsx-child
+ * @subpackage	lsx-customizer
+ */
+function lsx_aepo_customizer_colour_selectors_button_cta( $css, $colors ) {
+	$css .= '
+		@import "' . LSX_AEPO_PATH . '/assets/css/scss/customizer-colours";
+
+		/**
+		 * LSX Customizer - Button CTA (AEPO)
+		 */
+		@include customizer-aepo-button-cta-colours (
+			$shadow: ' . $colors['button_cta_shadow'] . '
+		);
+	';
+
+	return $css;
+}
+
+add_filter( 'lsx_customizer_colour_selectors_button_cta', 'lsx_aepo_customizer_colour_selectors_button_cta', 15, 2 );

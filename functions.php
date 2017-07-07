@@ -10,9 +10,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Theme version.
+ * Constants.
  */
-define( 'LSX_AEPO_VERSION', '1.0.0' );
+define( 'LSX_AEPO_PATH', plugin_dir_path( __FILE__ ) );
+define( 'LSX_AEPO_CORE', __FILE__ );
+define( 'LSX_AEPO_URL', plugin_dir_url( __FILE__ ) );
+define( 'LSX_AEPO_VER', '1.0.0' );
 
 /**
  * Includes.
@@ -38,7 +41,7 @@ add_action( 'after_setup_theme', 'lsx_aepo_setup', 11 );
  * @subpackage setup
  */
 function lsx_aepo_scripts() {
-	wp_enqueue_script( 'aepo-lsx-child-scripts', get_stylesheet_directory_uri() . '/assets/js/custom.min.js', array( 'lsx_script' ), LSX_AEPO_VERSION, true );
+	wp_enqueue_script( 'aepo-lsx-child-scripts', get_stylesheet_directory_uri() . '/assets/js/custom.min.js', array( 'lsx_script' ), LSX_AEPO_VER, true );
 
 	// Remove Google Fonts feature from LSX theme
 	wp_dequeue_style( 'lsx-header-font' );
