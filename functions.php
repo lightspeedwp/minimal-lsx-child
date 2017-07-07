@@ -22,6 +22,7 @@ define( 'LSX_AEPO_VER', '1.0.0' );
  */
 require_once( 'includes/lsx.php' );
 require_once( 'includes/lsx-customizer.php' );
+require_once( 'includes/class-lsx-aepo-widget-posts.php' );
 
 /**
  * Sets up theme defaults.

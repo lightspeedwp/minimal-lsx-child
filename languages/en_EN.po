@@ -14,6 +14,14 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#: includes/class-lsx-aepo-widget-posts.php:16
+msgid "AEPO Posts"
+msgstr ""
+
+#: includes/class-lsx-aepo-widget-posts.php:45
+msgid "Title:"
+msgstr ""
+
 #: includes/lsx-customizer.php:10
 msgid "AEPO"
 msgstr ""

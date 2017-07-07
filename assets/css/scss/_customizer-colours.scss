@@ -5,6 +5,30 @@
 				background-color: $bg_section;
 			}
 		}
+
+		.aepo-entry-slot {
+			h4 {
+				color: white;
+			}
+		}
+	}
+
+	.aepo-entry-slot {
+		color: white;
+
+		a:not(.btn) {
+			&,
+			&:active,
+			&:visited {
+				color: white;
+			}
+
+			&:hover,
+			&:hover:active,
+			&:focus {
+				color: white;
+			}
+		}
 	}
 }
 

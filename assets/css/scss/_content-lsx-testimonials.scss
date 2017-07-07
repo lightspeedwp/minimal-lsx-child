@@ -1,83 +1,81 @@
-#home-widgets {
-	#lsx-testimonials-slider {
+#lsx-testimonials-slider {
+	margin-top: 7.2rem;
+
+	@include media('>=phone') {
+		margin-left: 16.66667%; // 2/12 columns
+		margin-right: 16.66667%; // 2/12 columns
+		width: 66.66667%; // 8/12 columns
+	}
+
+	.slick-arrow {
+		display: none;
+	}
+
+	.slick-dots {
+		margin-bottom: -7.2rem;
 		margin-top: 7.2rem;
+		opacity: 0.5;
 
-		@include media('>=phone') {
-			margin-left: 16.66667%; // 2/12 columns
-			margin-right: 16.66667%; // 2/12 columns
-			width: 66.66667%; // 8/12 columns
-		}
+		& > li {
+			@include media('>=tablet') { padding: 0 5px; }
 
-		.slick-arrow {
-			display: none;
-		}
+			& > button {
+				border-radius: 50%;
+				height: 10px;
+				padding: 0;
+				width: 10px;
 
-		.slick-dots {
-			margin-bottom: -7.2rem;
-			margin-top: 7.2rem;
-			opacity: 0.5;
-
-			& > li {
-				@include media('>=tablet') { padding: 0 5px; }
-
-				& > button {
-					border-radius: 50%;
-					height: 10px;
-					padding: 0;
-					width: 10px;
-
-					@include media('>=tablet') { height: 10px; }
-				}
+				@include media('>=tablet') { height: 10px; }
 			}
 		}
 	}
+}
 
-	.lsx-testimonials-slot {
-		margin-top: 0;
+.lsx-testimonials-slot {
+	margin-top: 0;
 
-		.lsx-testimonials-avatar {
-			float: left;
-			height: 72px;
-			margin: 0;
-			width: 72px;
-		}
+	.lsx-testimonials-avatar {
+		float: left;
+		height: 72px;
+		margin: 0;
+		width: 72px;
+	}
 
-		.lsx-testimonials-content {
-			border: none;
-			border-radius: 0;
-			font-size: 12px;
-			margin: 0 0 2.8rem calc(72px + 20px);
-			padding: 0;
-			text-align: left;
-			width: auto;
+	.lsx-testimonials-content {
+		border: none;
+		border-radius: 0;
+		font-size: 12px;
+		margin: 0 0 2.8rem calc(72px + 20px);
+		padding: 0;
+		text-align: left;
+		width: auto;
 
-			&:before {
-				display: none;
-			}
-
-			p {
-				line-height: 1.8;
-			}
-		}
-
-		.lsx-testimonials-title {
+		&:before {
 			display: none;
 		}
 
-		.lsx-testimonials-byline {
-			display: block;
-			font-size: 14px;
-			font-weight: bold;
-			margin: 0 0 0 calc(72px + 20px);
+		p {
+			line-height: 1.8;
+		}
+	}
 
-			& > .fa,
-			& > .lsx-testimonials-meta {
-				display: none;
-			}
+	.lsx-testimonials-title {
+		display: none;
+	}
 
-			& > span {
-				font-weight: 300;
-			}
+	.lsx-testimonials-byline {
+		display: block;
+		font-size: 14px;
+		font-weight: bold;
+		margin: 0 0 0 calc(72px + 20px);
+
+		& > .fa,
+		& > .lsx-testimonials-meta {
+			display: none;
+		}
+
+		& > span {
+			font-weight: 300;
 		}
 	}
 }
