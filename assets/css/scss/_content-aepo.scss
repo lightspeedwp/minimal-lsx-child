@@ -95,11 +95,15 @@
 				background-position: center center;
 				background-repeat: no-repeat;
 				display: inline-block;
-				opacity: 0.35;
+
 				text-indent: -9999px;
 
-				&:hover {
-					opacity: 1;
+				@include media('>=tablet') {
+					opacity: 0.35;
+
+					&:hover {
+						opacity: 1;
+					}
 				}
 			}
 		}
