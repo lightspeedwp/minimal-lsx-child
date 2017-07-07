@@ -1,5 +1,9 @@
 /** AEPO styles. @package aepo-lsx-child */
-body { font-size: 14px; }
+@media (min-width: 1200px) { .container { width: 970px; } }
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 { padding-right: 10px; padding-left: 10px; }
+
+body { font-size: 14px; letter-spacing: 0.5px; }
 
 @font-face { font-family: 'Avenir'; src: url("../fonts/Avenir-Light.woff2") format("woff2"), url("../fonts/Avenir-Light.woff") format("woff"), url("../fonts/Avenir-Light.ttf") format("truetype"); font-weight: 300; font-style: normal; }
 
@@ -78,16 +82,50 @@ h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 { font-weight: normal; }
 
 #home-widgets > .widget { margin-bottom: 10rem; }
 
-#home-widgets > .widget:nth-child(even) { margin-right: -999rem; margin-left: -999rem; padding: 10rem 999rem; }
-
 #home-widgets > .widget:nth-child(even):last-child { margin-bottom: 0; }
 
-@media (min-width: 992px) { #home-widgets > .widget.widget_text .aepo-narrow-text { margin: 0 auto; max-width: 670px; } }
+#home-widgets > .widget:nth-child(even) { margin-right: -999rem; margin-left: -999rem; padding: 10rem 999rem; }
 
-#home-widgets > .widget.widget_text .aepo-buttons-group { margin-top: 2.8rem; }
+#home-widgets > .widget .aepo-buttons-wrapper { margin-top: 2.8rem; }
 
-@media (max-width: 767px) { #home-widgets > .widget.widget_text .aepo-buttons-group .text-left, #home-widgets > .widget.widget_text .aepo-buttons-group .text-right { text-align: center; }
-  #home-widgets > .widget.widget_text .aepo-buttons-group [class*="col-"] + [class*="col-"] { margin-top: 2.8rem; } }
+@media (max-width: 767px) { #home-widgets > .widget .aepo-buttons-wrapper .text-left, #home-widgets > .widget .aepo-buttons-wrapper .text-right { text-align: center; }
+  #home-widgets > .widget .aepo-buttons-wrapper [class*="col-"] + [class*="col-"] { margin-top: 2.8rem; } }
+
+#home-widgets > .widget .aepo-usp-wrapper { margin-bottom: -6rem; margin-top: -2.8rem; }
+
+@media (max-width: 767px) { #home-widgets > .widget .aepo-usp-wrapper [class*="col-"] + [class*="col-"] { margin-top: 0; } }
+
+#home-widgets > .widget .aepo-usp { margin-bottom: 6rem; margin-top: 6rem; padding-right: 75px; position: relative; }
+
+#home-widgets > .widget .aepo-usp:before { background-position: center center; background-repeat: no-repeat; bottom: 0; content: ''; right: 0; position: absolute; top: 0; width: 60px; }
+
+#home-widgets > .widget .aepo-usp-contractor:before { background-image: url(../images/contractor_icn@2x.png); background-size: 31px 39px; }
+
+#home-widgets > .widget .aepo-usp-fleet:before { background-image: url(../images/fleet_icn@2x.png); background-size: 42px 42px; }
+
+#home-widgets > .widget .aepo-usp-camera:before { background-image: url(../images/camera_icn@2x.png); background-size: 51px 28px; }
+
+#home-widgets > .widget .aepo-usp-helmet:before { background-image: url(../images/helmet_icn@2x.png); background-size: 33px 31px; }
+
+#home-widgets > .widget .aepo-client-wrapper { margin-top: 7.2rem; text-align: center; }
+
+@media (min-width: 768px) { #home-widgets > .widget .aepo-client-wrapper { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row wrap; flex-flow: row wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; text-align: none; } }
+
+#home-widgets > .widget .aepo-client + .aepo-client { margin-top: 7.2rem; }
+
+@media (min-width: 768px) { #home-widgets > .widget .aepo-client + .aepo-client { margin-top: 0; } }
+
+#home-widgets > .widget .aepo-client a { background-position: center center; background-repeat: no-repeat; display: inline-block; opacity: 0.35; text-indent: -9999px; }
+
+#home-widgets > .widget .aepo-client a:hover { opacity: 1; }
+
+#home-widgets > .widget .aepo-client-fox a { background-image: url(../images/fox_logo@2x.png); background-size: 115px 38px; height: 38px; width: 115px; }
+
+#home-widgets > .widget .aepo-client-hbo a { background-image: url(../images/hbo_logo@2x.png); background-size: 97px 39px; height: 39px; width: 97px; }
+
+#home-widgets > .widget .aepo-client-rapha a { background-image: url(../images/rapha_logo@2x.png); background-size: 131px 57px; height: 57px; width: 131px; }
+
+#home-widgets > .widget .aepo-client-apple a { background-image: url(../images/apple_logo@2x.png); background-size: 39px 47px; height: 47px; width: 39px; }
 
 #home-widgets h3, #home-widgets .widget-title { font-size: 24px; margin-bottom: 2.8rem; }
 
