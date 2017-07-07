@@ -143,7 +143,7 @@ h2, h3, h5, h6, .h2, .h3, .h5, .h6 { font-weight: normal; }
 
 .aepo-posts-wrapper .row [class*="col-"] { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
 
-.aepo-entry-slot { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-top: 20px; min-height: 300px; padding: 20px; position: relative; text-align: center; width: 100%; }
+.aepo-entry-slot { background-position: center center; background-repeat: no-repeat; background-size: cover; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-top: 20px; min-height: 300px; padding: 20px; position: relative; text-align: center; width: 100%; }
 
 .aepo-posts-wrapper [class*="col-"]:first-child .aepo-entry-slot { margin-top: 0; }
 
