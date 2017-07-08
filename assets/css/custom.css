@@ -63,7 +63,7 @@ h3, h5, h6, .h3, .h5, .h6 { font-weight: normal; }
 
 #masthead { box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); }
 
-@media (min-width: 1200px) { #masthead > .container { min-height: 72px; } }
+@media (min-width: 1200px) { #masthead > .container { height: 72px; min-height: 72px; } }
 
 @media (max-width: 1199px) { #masthead .wrapper-toggle .mobile-menu-title { font-size: 12px; font-weight: normal; letter-spacing: 1.5px; }
   #masthead .primary-navbar > .nav { letter-spacing: 1.5px; text-transform: uppercase; }

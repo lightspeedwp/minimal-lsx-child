@@ -3,6 +3,7 @@
 
 	& > .container {
 		@include media('>=desktop') {
+			height: 72px; // design
 			min-height: 72px; // design
 		}
 	}
