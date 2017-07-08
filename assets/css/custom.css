@@ -120,7 +120,7 @@ h3, h5, h6, .h3, .h5, .h6 { font-weight: normal; }
 
 .aepo-slider .slick-arrow.slick-next:hover:before { background-position: -50px -50px; }
 
-.aepo-slider-slide-content-wrapper { background: transparent url(../images/main@2x.png) no-repeat center center; background-size: cover; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; min-height: 50vh; }
+.aepo-slider-slide-content-wrapper { background: transparent url(../images/main@2x.jpg) no-repeat center center; background-size: cover; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; min-height: 50vh; }
 
 @media (min-width: 1200px) { .aepo-slider-slide-content-wrapper { min-height: 660px; } }
 
