@@ -122,7 +122,7 @@ h3, h5, h6, .h3, .h5, .h6 { font-weight: normal; }
 
 .aepo-slider-slide-content-wrapper { background: transparent url(../images/main@2x.jpg) no-repeat center center; background-size: cover; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; min-height: 50vh; }
 
-@media (min-width: 1200px) { .aepo-slider-slide-content-wrapper { min-height: 660px; } }
+@media (min-width: 1200px) { .aepo-slider-slide-content-wrapper { height: 660px; } }
 
 .aepo-slider-slide-content { -webkit-box-align: center; -ms-flex-align: center; align-items: center; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; padding: 7.2rem calc(3rem + 50px + 10px); text-align: center; width: 100%; }
 

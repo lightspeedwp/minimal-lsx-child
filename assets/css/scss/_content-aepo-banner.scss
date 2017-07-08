@@ -61,7 +61,7 @@
 	min-height: 50vh;
 
 	@include media('>=desktop') {
-		min-height: 660px; // design
+		height: 660px; // design
 	}
 }
 
