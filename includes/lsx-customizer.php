@@ -11,10 +11,10 @@ function lsx_aepo_customizer_colour_choices( $array ) {
 
 		'colors' => array(
 			'button_background_color'       => '#FFFFFF',
-			'button_background_hover_color' => '#989fA4',
+			'button_background_hover_color' => '#FFFFFF',
 			'button_text_color'             => '#54636D',
-			'button_text_color_hover'       => '#FFFFFF',
-			'button_shadow'                 => '#ECEFF1',
+			'button_text_color_hover'       => '#54636D',
+			'button_shadow'                 => '#DFDFDF',
 
 			'button_cta_background_color'       => '#FFFFFF',
 			'button_cta_background_hover_color' => '#404f5A',
@@ -142,26 +142,3 @@ function lsx_aepo_customizer_colour_selectors_button( $css, $colors ) {
 }
 
 add_filter( 'lsx_customizer_colour_selectors_button', 'lsx_aepo_customizer_colour_selectors_button', 15, 2 );
-
-/**
- * Handle body colours that might be change by LSX Customiser.
- *
- * @package     aepo-lsx-child
- * @subpackage	lsx-customizer
- */
-function lsx_aepo_customizer_colour_selectors_button_cta( $css, $colors ) {
-	$css .= '
-		@import "' . LSX_AEPO_PATH . '/assets/css/scss/customizer-colours";
-
-		/**
-		 * LSX Customizer - Button CTA (AEPO)
-		 */
-		@include customizer-aepo-button-cta-colours (
-			$shadow: ' . $colors['button_cta_shadow'] . '
-		);
-	';
-
-	return $css;
-}
-
-add_filter( 'lsx_customizer_colour_selectors_button_cta', 'lsx_aepo_customizer_colour_selectors_button_cta', 15, 2 );

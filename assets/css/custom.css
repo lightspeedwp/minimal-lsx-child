@@ -59,7 +59,7 @@ h3, h5, h6, .h3, .h5, .h6 { font-weight: normal; }
 
 .lsx .btn, .lsx .btn:active, .lsx .btn:visited { box-shadow: none; font-weight: normal; left: 0; min-width: 220px; top: 0; }
 
-.btn.cta-btn, .btn.cta-btn:active, .btn.cta-btn:visited { font-weight: 900; }
+.lsx .btn:hover, .lsx .btn:hover:active, .lsx .btn:focus { font-weight: 900; }
 
 #masthead { box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); }
 

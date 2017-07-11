@@ -11,11 +11,19 @@
 		}
 	}
 
-	&.cta-btn {
-		&,
-		&:active,
-		&:visited {
+	&:hover,
+	&:hover:active,
+	&:focus {
+		.lsx & {
 			font-weight: 900;
 		}
 	}
+
+	// &.cta-btn {
+	// 	&,
+	// 	&:active,
+	// 	&:visited {
+	// 		font-weight: 900;
+	// 	}
+	// }
 }
