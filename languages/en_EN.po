@@ -22,6 +22,18 @@ msgstr ""
 msgid "Title:"
 msgstr ""
 
-#: includes/lsx-customizer.php:10
+#: includes/lsx-customizer.php:10, partials/homepage-slider.php:13
 msgid "AEPO"
+msgstr ""
+
+#: partials/homepage-slider.php:14, partials/homepage-slider.php:23, partials/homepage-slider.php:32
+msgid "The one and only Aerial Photohraphy Studio"
+msgstr ""
+
+#: partials/homepage-slider.php:22
+msgid "SLIDE 2"
+msgstr ""
+
+#: partials/homepage-slider.php:31
+msgid "SLIDE 3"
 msgstr ""

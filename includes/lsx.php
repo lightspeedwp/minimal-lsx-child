@@ -13,7 +13,7 @@ function lsx_aepo_credit_link( $enable_credit ) {
 add_filter( 'lsx_credit_link', 'lsx_aepo_credit_link', 11 );
 
 /**
- * Remove credit link from footer
+ * Add homepage slider
  *
  * @package     aepo-lsx-child
  * @subpackage	lsx-customizer
