@@ -1,4 +1,4 @@
-.aepo-slider {
+.minimal-slider {
 	.slick-arrow {
 		background: transparent;
 		border: none;
@@ -53,7 +53,7 @@
 	}
 }
 
-.aepo-slider-slide-content-wrapper {
+.minimal-slider-slide-content-wrapper {
 	background: transparent url(../images/main@2x.jpg) no-repeat center center;
 	background-size: cover;
 	display: flex;
@@ -65,7 +65,7 @@
 	}
 }
 
-.aepo-slider-slide-content {
+.minimal-slider-slide-content {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
@@ -75,7 +75,7 @@
 	width: 100%;
 }
 
-.aepo-slider-slide-tagline {
+.minimal-slider-slide-tagline {
 	font-size: $header-h3-size;
 	font-weight: 300;
 	letter-spacing: $letter-spacing-large;

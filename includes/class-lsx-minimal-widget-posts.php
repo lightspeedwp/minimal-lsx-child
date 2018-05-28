@@ -1,19 +1,19 @@
 <?php
-if ( ! class_exists( 'LSX_AEPO_Widget_Posts' ) ) {
+if ( ! class_exists( 'LSX_MINIMAL_Widget_Posts' ) ) {
 
 	/**
-	 * LSX AEPO Widget Posts Class
+	 * LSX MINIMAL Widget Posts Class
 	 *
-	 * @package aepo-lsx-child
+	 * @package minimal-lsx-child
 	 */
-	class LSX_AEPO_Widget_Posts extends WP_Widget {
+	class LSX_MINIMAL_Widget_Posts extends WP_Widget {
 
 		public function __construct() {
 			$widget_ops = array(
-				'classname' => 'lsx-aepo-widget-posts',
+				'classname' => 'lsx-minimal-widget-posts',
 			);
 
-			parent::__construct( 'LSX_AEPO_Widget_Posts', esc_html__( 'AEPO Posts', 'aepo-lsx-child' ), $widget_ops );
+			parent::__construct( 'LSX_MINIMAL_Widget_Posts', esc_html__( 'MINIMAL Posts', 'minimal-lsx-child' ), $widget_ops );
 		}
 
 		public function widget( $args, $instance ) {
@@ -42,7 +42,7 @@ if ( ! class_exists( 'LSX_AEPO_Widget_Posts' ) ) {
 			$title = esc_attr( $instance['title'] );
 			?>
 			<p>
-				<label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_html_e( 'Title:', 'aepo-lsx-child' ); ?></label>
+				<label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_html_e( 'Title:', 'minimal-lsx-child' ); ?></label>
 				<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
 			</p>
 			<?php
@@ -80,7 +80,7 @@ if ( ! class_exists( 'LSX_AEPO_Widget_Posts' ) ) {
 			if ( $posts->have_posts() ) {
 				global $post;
 
-				echo '<div class="aepo-posts-wrapper">';
+				echo '<div class="minimal-posts-wrapper">';
 				echo '<div class="row">';
 
 				while ( $posts->have_posts() ) {
@@ -98,20 +98,20 @@ if ( ! class_exists( 'LSX_AEPO_Widget_Posts' ) ) {
 					}
 
 					echo '<div class="col-xs-12 col-md-4">';
-					echo '<div class="aepo-post-slot" style="background-image:url(' . esc_attr( $image_src ) . ')">';
+					echo '<div class="minimal-post-slot" style="background-image:url(' . esc_attr( $image_src ) . ')">';
 
-					the_title( '<h4 class="aepo-post-title">', '</h4>' );
+					the_title( '<h4 class="minimal-post-title">', '</h4>' );
 
 					printf(
-						'<time class="aepo-post-date entry-date published updated" datetime="%1$s">%2$s</time>',
+						'<time class="minimal-post-date entry-date published updated" datetime="%1$s">%2$s</time>',
 						esc_attr( get_the_date( 'c' ) ),
 						get_the_date()
 					);
 
-					echo '<div class="aepo-post-content">' . wp_kses_post( get_the_excerpt() ) . '</div>';
+					echo '<div class="minimal-post-content">' . wp_kses_post( get_the_excerpt() ) . '</div>';
 
 					printf(
-						'<a href="%1$s" class="aepo-post-read-more">%2$s</a>',
+						'<a href="%1$s" class="minimal-post-read-more">%2$s</a>',
 						esc_url( get_permalink() ),
 						esc_html__( 'Read all' )
 					);
@@ -127,6 +127,6 @@ if ( ! class_exists( 'LSX_AEPO_Widget_Posts' ) ) {
 
 	}
 
-	add_action( 'widgets_init', create_function( '', 'return register_widget( "LSX_AEPO_Widget_Posts" );' ) );
+	add_action( 'widgets_init', create_function( '', 'return register_widget( "LSX_MINIMAL_Widget_Posts" );' ) );
 
 }

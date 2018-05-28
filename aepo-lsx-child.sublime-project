@@ -16,11 +16,11 @@
   "settings": {
     "phpcs": {
       "phpcs_additional_args": {
-        "--standard": "/Users/nandotess/Sites-LightSpeed/@git/aepo-lsx-child/codesniffer.ruleset.xml",
+        "--standard": "/Users/nandotess/Sites-LightSpeed/@git/minimal-lsx-child/codesniffer.ruleset.xml",
         "--extensions": "php"
       },
       "phpcbf_additional_args": {
-        "--standard": "/Users/nandotess/Sites-LightSpeed/@git/aepo-lsx-child/codesniffer.ruleset.xml",
+        "--standard": "/Users/nandotess/Sites-LightSpeed/@git/minimal-lsx-child/codesniffer.ruleset.xml",
         "--extensions": "php"
       }
     }

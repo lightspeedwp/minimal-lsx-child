@@ -1,4 +1,4 @@
-@mixin customizer-aepo-body-colours ($bg_section: #FAFBFC) {
+@mixin customizer-minimal-body-colours ($bg_section: #FAFBFC) {
 	#home-widgets {
 		& > .widget {
 			&:nth-child(even) {
@@ -6,14 +6,14 @@
 			}
 		}
 
-		.aepo-post-slot {
+		.minimal-post-slot {
 			h4 {
 				color: white;
 			}
 		}
 	}
 
-	.aepo-post-slot {
+	.minimal-post-slot {
 		color: white;
 
 		a:not(.btn) {
@@ -31,13 +31,13 @@
 		}
 	}
 
-	.aepo-slider-slide-title,
-	.aepo-slider-slide-tagline {
+	.minimal-slider-slide-title,
+	.minimal-slider-slide-tagline {
 		color: white;
 	}
 }
 
-@mixin customizer-aepo-button-colours ($shadow: #ECEFF1) {
+@mixin customizer-minimal-button-colours ($shadow: #ECEFF1) {
 	.btn {
 		&,
 		&:active,
@@ -53,7 +53,7 @@
 	}
 }
 
-@mixin customizer-aepo-lsx-testimonials-body-colours($small: #313F48) {
+@mixin customizer-minimal-lsx-testimonials-body-colours($small: #313F48) {
 	.content-area {
 		.lsx-testimonials-content { color: $small; }
 	}

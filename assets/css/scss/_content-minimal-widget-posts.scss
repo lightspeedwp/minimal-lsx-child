@@ -1,4 +1,4 @@
-.aepo-posts-wrapper {
+.minimal-posts-wrapper {
 	margin-top: $gap-medium;
 
 	.row {
@@ -13,7 +13,7 @@
 	}
 }
 
-.aepo-post-slot {
+.minimal-post-slot {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -27,7 +27,7 @@
 	text-align: center;
 	width: 100%;
 
-	.aepo-posts-wrapper [class*="col-"]:first-child & {
+	.minimal-posts-wrapper [class*="col-"]:first-child & {
 		margin-top: 0;
 	}
 
@@ -68,33 +68,33 @@
 	}
 }
 
-.aepo-post-date,
-.aepo-post-content,
-.aepo-post-read-more {
+.minimal-post-date,
+.minimal-post-content,
+.minimal-post-read-more {
 	@include media('>=tablet') {
 		display: none;
 
-		.aepo-post-slot:hover & {
+		.minimal-post-slot:hover & {
 			display: block;
 		}
 	}
 }
 
-h4.aepo-post-title {
+h4.minimal-post-title {
 	margin-bottom: 0;
 }
 
-.aepo-post-date {
+.minimal-post-date {
 	font-weight: 500;
 	margin-bottom: 5px;
 	opacity: 0.5;
 }
 
-.aepo-post-content {
+.minimal-post-content {
 	font-weight: normal;
 }
 
-.aepo-post-read-more {
+.minimal-post-read-more {
 	font-weight: 700;
 	margin-top: $gap-elements;
 	text-transform: uppercase;

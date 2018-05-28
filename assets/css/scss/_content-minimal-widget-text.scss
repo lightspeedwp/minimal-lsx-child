@@ -2,7 +2,7 @@
 	& > .widget {
 		// Buttons
 
-		.aepo-buttons-wrapper {
+		.minimal-buttons-wrapper {
 			margin-top: 5rem;
 
 			@include media('<phone') {
@@ -17,7 +17,7 @@
 
 		// USPs
 
-		.aepo-usp-wrapper {
+		.minimal-usp-wrapper {
 			margin-bottom: -$gap-special-usp;
 			margin-top: -$gap;
 
@@ -28,7 +28,7 @@
 			}
 		}
 
-		.aepo-usp {
+		.minimal-usp {
 			margin-bottom: $gap-special-usp;
 			margin-top: $gap-special-usp;
 			padding-left: (60px + ($bootstrap-column-spacing * 2));
@@ -45,7 +45,7 @@
 			}
 		}
 
-		.aepo-usp-contractor {
+		.minimal-usp-contractor {
 			&:before {
 				background-position: 0 -28px;
 				height: 39px;
@@ -56,7 +56,7 @@
 			}
 		}
 
-		.aepo-usp-fleet {
+		.minimal-usp-fleet {
 			&:before {
 				background-position: -31px -31px;
 				height: 42px;
@@ -67,7 +67,7 @@
 			}
 		}
 
-		.aepo-usp-camera {
+		.minimal-usp-camera {
 			&:before {
 				background-position: 0 0;
 				height: 28px;
@@ -78,7 +78,7 @@
 			}
 		}
 
-		.aepo-usp-helmet {
+		.minimal-usp-helmet {
 			&:before {
 				background-position: -51px 0;
 				height: 31px;
@@ -91,7 +91,7 @@
 
 		// Clients
 
-		.aepo-client-wrapper {
+		.minimal-client-wrapper {
 			margin-top: $gap-medium;
 			text-align: center;
 
@@ -103,8 +103,8 @@
 			}
 		}
 
-		.aepo-client {
-			& + .aepo-client {
+		.minimal-client {
+			& + .minimal-client {
 				margin-top: $gap-medium;
 
 				@include media('>=phone') {
@@ -129,7 +129,7 @@
 			}
 		}
 
-		.aepo-client-fox {
+		.minimal-client-fox {
 			a {
 				background-image: url(../images/fox_logo@2x.png);
 				background-size: 115px 38px;
@@ -138,7 +138,7 @@
 			}
 		}
 
-		.aepo-client-hbo {
+		.minimal-client-hbo {
 			a {
 				background-image: url(../images/hbo_logo@2x.png);
 				background-size: 97px 39px;
@@ -147,7 +147,7 @@
 			}
 		}
 
-		.aepo-client-rapha {
+		.minimal-client-rapha {
 			a {
 				background-image: url(../images/rapha_logo@2x.png);
 				background-size: 131px 57px;
@@ -156,7 +156,7 @@
 			}
 		}
 
-		.aepo-client-apple {
+		.minimal-client-apple {
 			a {
 				background-image: url(../images/apple_logo@2x.png);
 				background-size: 39px 47px;

@@ -1,11 +1,11 @@
 /**
- * AEPO scripts.
+ * MINIMAL scripts.
  *
- * @package    aepo-lsx-child
+ * @package    minimal-lsx-child
  * @subpackage scripts
  */
 
-var lsx_aepo = Object.create( null );
+var lsx_minimal = Object.create( null );
 
 ;( function( $, window, document, undefined ) {
 
@@ -19,11 +19,11 @@ var lsx_aepo = Object.create( null );
 	/**
 	 * Create homepage banner Slick Slider
 	 *
-	 * @package    aepo-lsx-child
+	 * @package    minimal-lsx-child
 	 * @subpackage scripts
 	 */
-	lsx_aepo.create_homepage_slick_slider = function() {
-		$( '.aepo-slider' ).slick({
+	lsx_minimal.create_homepage_slick_slider = function() {
+		$( '.minimal-slider' ).slick({
 			draggable: false,
 			infinite: true,
 			slidesToScroll: 1,
@@ -49,10 +49,10 @@ var lsx_aepo = Object.create( null );
 	/**
 	 * Update testimonials slick slider (remove arrows)
 	 *
-	 * @package    aepo-lsx-child
+	 * @package    minimal-lsx-child
 	 * @subpackage scripts
 	 */
-	lsx_aepo.update_testimonials_slick_slider = function() {
+	lsx_minimal.update_testimonials_slick_slider = function() {
 		var $testimonialSlider = $( '#lsx-testimonials-slider' );
 		$testimonialSlider.slick( 'slickSetOption', 'arrows', false, true );
 	};
@@ -60,13 +60,13 @@ var lsx_aepo = Object.create( null );
 	/**
 	 * On document ready.
 	 *
-	 * @package    aepo-lsx-child
+	 * @package    minimal-lsx-child
 	 * @subpackage scripts
 	 */
 	$document.ready( function() {
 
-		lsx_aepo.create_homepage_slick_slider();
-		lsx_aepo.update_testimonials_slick_slider();
+		lsx_minimal.create_homepage_slick_slider();
+		lsx_minimal.update_testimonials_slick_slider();
 
 	} );
 

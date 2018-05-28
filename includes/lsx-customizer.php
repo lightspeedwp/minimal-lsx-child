@@ -2,12 +2,12 @@
 /**
  * New colours scheme.
  *
- * @package     aepo-lsx-child
+ * @package     minimal-lsx-child
  * @subpackage	lsx-customizer
  */
-function lsx_aepo_customizer_colour_choices( $array ) {
-	$array['aepo'] = array(
-		'label'  => __( 'AEPO', 'aepo-lsx-child' ),
+function lsx_minimal_customizer_colour_choices( $array ) {
+	$array['minimal'] = array(
+		'label'  => __( 'MINIMAL', 'minimal-lsx-child' ),
 
 		'colors' => array(
 			'button_background_color'       => '#FFFFFF',
@@ -88,29 +88,29 @@ function lsx_aepo_customizer_colour_choices( $array ) {
 	return $array;
 }
 
-add_filter( 'lsx_customizer_colour_choices', 'lsx_aepo_customizer_colour_choices', 11 );
+add_filter( 'lsx_customizer_colour_choices', 'lsx_minimal_customizer_colour_choices', 11 );
 
 /**
  * Handle body colours that might be change by LSX Customiser.
  *
- * @package     aepo-lsx-child
+ * @package     minimal-lsx-child
  * @subpackage	lsx-customizer
  */
-function lsx_aepo_customizer_colour_selectors_body( $css, $colors ) {
+function lsx_minimal_customizer_colour_selectors_body( $css, $colors ) {
 	$css .= '
-		@import "' . LSX_AEPO_PATH . '/assets/css/scss/customizer-colours";
+		@import "' . LSX_MINIMAL_PATH . '/assets/css/scss/customizer-colours";
 
 		/**
-		 * LSX Customizer - Body (AEPO)
+		 * LSX Customizer - Body (MINIMAL)
 		 */
-		@include customizer-aepo-body-colours (
+		@include customizer-minimal-body-colours (
 			$bg_section: ' . $colors['body_section_full_background_color'] . '
 		);
 
 		/**
-		 * LSX Customizer - Body (LSX Testimonials) (AEPO)
+		 * LSX Customizer - Body (LSX Testimonials) (MINIMAL)
 		 */
-		@include customizer-aepo-lsx-testimonials-body-colours (
+		@include customizer-minimal-lsx-testimonials-body-colours (
 			$small: ' . $colors['body_text_small_color'] . '
 		);
 	';
@@ -118,22 +118,22 @@ function lsx_aepo_customizer_colour_selectors_body( $css, $colors ) {
 	return $css;
 }
 
-add_filter( 'lsx_customizer_colour_selectors_body', 'lsx_aepo_customizer_colour_selectors_body', 15, 2 );
+add_filter( 'lsx_customizer_colour_selectors_body', 'lsx_minimal_customizer_colour_selectors_body', 15, 2 );
 
 /**
  * Handle body colours that might be change by LSX Customiser.
  *
- * @package     aepo-lsx-child
+ * @package     minimal-lsx-child
  * @subpackage	lsx-customizer
  */
-function lsx_aepo_customizer_colour_selectors_button( $css, $colors ) {
+function lsx_minimal_customizer_colour_selectors_button( $css, $colors ) {
 	$css .= '
-		@import "' . LSX_AEPO_PATH . '/assets/css/scss/customizer-colours";
+		@import "' . LSX_MINIMAL_PATH . '/assets/css/scss/customizer-colours";
 
 		/**
-		 * LSX Customizer - Button (AEPO)
+		 * LSX Customizer - Button (MINIMAL)
 		 */
-		@include customizer-aepo-button-colours (
+		@include customizer-minimal-button-colours (
 			$shadow: ' . $colors['button_shadow'] . '
 		);
 	';
@@ -141,4 +141,4 @@ function lsx_aepo_customizer_colour_selectors_button( $css, $colors ) {
 	return $css;
 }
 
-add_filter( 'lsx_customizer_colour_selectors_button', 'lsx_aepo_customizer_colour_selectors_button', 15, 2 );
+add_filter( 'lsx_customizer_colour_selectors_button', 'lsx_minimal_customizer_colour_selectors_button', 15, 2 );
