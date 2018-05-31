@@ -41,7 +41,7 @@ add_action( 'after_setup_theme', 'lsx_minimal_setup', 11 );
  * @package    minimal-lsx-child
  * @subpackage setup
  */
-function lsx_minimal_scripts() {
+function minimal_lsx_scripts() {
 	wp_enqueue_script( 'minimal-lsx-child-scripts', get_stylesheet_directory_uri() . '/assets/js/custom.min.js', array( 'lsx_script' ), LSX_MINIMAL_VER, true );
 
 	// Remove Google Fonts feature from LSX theme
@@ -49,4 +49,4 @@ function lsx_minimal_scripts() {
 	wp_dequeue_style( 'lsx-body-font' );
 	wp_style_add_data( 'lsx_main', 'after', '' );
 }
-add_action( 'wp_enqueue_scripts', 'lsx_minimal_scripts', 1999 );
+add_action( 'wp_enqueue_scripts', 'minimal_lsx_scripts', 1999 );

@@ -41,7 +41,7 @@ gulp.task('default', function() {
 	console.log('gulp compile-css    to compile the scss to css');
 	console.log('gulp compile-js     to compile the js to min.js');
 	console.log('gulp watch          to continue watching the files for changes');
-	console.log('gulp wordpress-lang to compile the minimal-lsx-child.pot, en_EN.po and en_EN.mo');
+	console.log('gulp wordpress-lang to compile the minimal-lsx.pot, en_EN.po and en_EN.mo');
 });
 
 gulp.task('styles', function () {
@@ -121,19 +121,19 @@ gulp.task('wordpress-pot', function() {
 	return gulp.src('**/*.php')
 		.pipe(sort())
 		.pipe(wppot({
-			domain: 'minimal-lsx-child',
-			package: 'minimal-lsx-child',
+			domain: 'minimal-lsx',
+			package: 'minimal-lsx',
 			team: 'LightSpeed <webmaster@lsdev.biz>'
 		}))
-		.pipe(gulp.dest('languages/minimal-lsx-child.pot'))
+		.pipe(gulp.dest('languages/minimal-lsx.pot'))
 });
 
 gulp.task('wordpress-po', function() {
 	return gulp.src('**/*.php')
 		.pipe(sort())
 		.pipe(wppot({
-			domain: 'minimal-lsx-child',
-			package: 'minimal-lsx-child',
+			domain: 'minimal-lsx',
+			package: 'minimal-lsx',
 			team: 'LightSpeed <webmaster@lsdev.biz>'
 		}))
 		.pipe(gulp.dest('languages/en_EN.po'))
