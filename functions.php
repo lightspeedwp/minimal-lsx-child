@@ -2,7 +2,7 @@
 /**
  * Minimal LSX functions.
  *
- * @package minimal-lsx-child
+ * @package minimal-lsx
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -12,10 +12,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Constants.
  */
-define( 'LSX_MINIMAL_PATH', plugin_dir_path( __FILE__ ) );
-define( 'LSX_MINIMAL_CORE', __FILE__ );
-define( 'LSX_MINIMAL_URL', plugin_dir_url( __FILE__ ) );
-define( 'LSX_MINIMAL_VER', '1.0.0' );
+define( 'MINIMAL_LSX_PATH', plugin_dir_path( __FILE__ ) );
+define( 'MINIMAL_LSX_CORE', __FILE__ );
+define( 'MINIMAL_LSX_URL', plugin_dir_url( __FILE__ ) );
+define( 'MINIMAL_LSX_VER', '1.0.0' );
 
 /**
  * Includes.
@@ -27,22 +27,22 @@ require_once( 'includes/class-lsx-minimal-widget-posts.php' );
 /**
  * Sets up theme defaults.
  *
- * @package    minimal-lsx-child
+ * @package    minimal-lsx
  * @subpackage setup
  */
-function lsx_minimal_setup() {
-	load_child_theme_textdomain( 'minimal-lsx-child', get_stylesheet_directory() . '/languages' );
+function minimal_lsx_setup() {
+	load_child_theme_textdomain( 'minimal-lsx', get_stylesheet_directory() . '/languages' );
 }
-add_action( 'after_setup_theme', 'lsx_minimal_setup', 11 );
+add_action( 'after_setup_theme', 'minimal_lsx_setup', 11 );
 
 /**
  * Enqueues the parent and the child theme styles.
  *
- * @package    minimal-lsx-child
+ * @package    minimal-lsx
  * @subpackage setup
  */
 function minimal_lsx_scripts() {
-	wp_enqueue_script( 'minimal-lsx-child-scripts', get_stylesheet_directory_uri() . '/assets/js/custom.min.js', array( 'lsx_script' ), LSX_MINIMAL_VER, true );
+	wp_enqueue_script( 'minimal-lsx-scripts', get_stylesheet_directory_uri() . '/assets/js/custom.min.js', array( 'lsx_script' ), MINIMAL_LSX_VER, true );
 
 	// Remove Google Fonts feature from LSX theme
 	wp_dequeue_style( 'lsx-header-font' );

@@ -14,3 +14,26 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#: includes/class-lsx-minimal-widget-posts.php:16
+msgid "MINIMAL Posts"
+msgstr ""
+
+#: includes/class-lsx-minimal-widget-posts.php:45
+msgid "Title:"
+msgstr ""
+
+#: includes/lsx-customizer.php:10, partials/homepage-slider.php:13
+msgid "MINIMAL"
+msgstr ""
+
+#: partials/homepage-slider.php:14, partials/homepage-slider.php:23, partials/homepage-slider.php:32
+msgid "The one and only Aerial Photohraphy Studio"
+msgstr ""
+
+#: partials/homepage-slider.php:22
+msgid "SLIDE 2"
+msgstr ""
+
+#: partials/homepage-slider.php:31
+msgid "SLIDE 3"
+msgstr ""

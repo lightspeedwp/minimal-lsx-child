@@ -2,26 +2,26 @@
 /**
  * Remove credit link from footer
  *
- * @package     minimal-lsx-child
+ * @package     minimal-lsx
  * @subpackage	lsx-customizer
  */
-function lsx_minimal_credit_link( $enable_credit ) {
+function minimal_lsx_credit_link( $enable_credit ) {
 	$enable_credit = false;
 	return $enable_credit;
 }
 
-add_filter( 'lsx_credit_link', 'lsx_minimal_credit_link', 11 );
+add_filter( 'lsx_credit_link', 'minimal_lsx_credit_link', 11 );
 
 /**
  * Add homepage slider
  *
- * @package     minimal-lsx-child
+ * @package     minimal-lsx
  * @subpackage	lsx-customizer
  */
-function lsx_minimal_homepage_banner() {
+function minimal_lsx_homepage_banner() {
 	if ( is_front_page() ) {
 		include locate_template( array( 'partials/homepage-slider.php' ) );
 	}
 }
 
-add_action( 'lsx_header_after', 'lsx_minimal_homepage_banner' );
+add_action( 'lsx_header_after', 'minimal_lsx_homepage_banner' );

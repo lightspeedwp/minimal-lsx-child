@@ -1,19 +1,19 @@
 <?php
-if ( ! class_exists( 'LSX_MINIMAL_Widget_Posts' ) ) {
+if ( ! class_exists( 'MINIMAL_LSX_Widget_Posts' ) ) {
 
 	/**
 	 * LSX MINIMAL Widget Posts Class
 	 *
-	 * @package minimal-lsx-child
+	 * @package minimal-lsx
 	 */
-	class LSX_MINIMAL_Widget_Posts extends WP_Widget {
+	class MINIMAL_LSX_Widget_Posts extends WP_Widget {
 
 		public function __construct() {
 			$widget_ops = array(
 				'classname' => 'lsx-minimal-widget-posts',
 			);
 
-			parent::__construct( 'LSX_MINIMAL_Widget_Posts', esc_html__( 'MINIMAL Posts', 'minimal-lsx-child' ), $widget_ops );
+			parent::__construct( 'MINIMAL_LSX_Widget_Posts', esc_html__( 'MINIMAL Posts', 'minimal-lsx' ), $widget_ops );
 		}
 
 		public function widget( $args, $instance ) {
@@ -42,7 +42,7 @@ if ( ! class_exists( 'LSX_MINIMAL_Widget_Posts' ) ) {
 			$title = esc_attr( $instance['title'] );
 			?>
 			<p>
-				<label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_html_e( 'Title:', 'minimal-lsx-child' ); ?></label>
+				<label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_html_e( 'Title:', 'minimal-lsx' ); ?></label>
 				<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
 			</p>
 			<?php
@@ -127,6 +127,6 @@ if ( ! class_exists( 'LSX_MINIMAL_Widget_Posts' ) ) {
 
 	}
 
-	add_action( 'widgets_init', create_function( '', 'return register_widget( "LSX_MINIMAL_Widget_Posts" );' ) );
+	add_action( 'widgets_init', create_function( '', 'return register_widget( "MINIMAL_LSX_Widget_Posts" );' ) );
 
 }

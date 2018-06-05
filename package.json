@@ -1,11 +1,11 @@
 {
-  "name": "minimal-lsx-child",
+  "name": "minimal-lsx",
   "version": "1.0.0",
   "description": "MINIMAL LSX Child Theme",
   "main": "gulpfile.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lightspeeddevelopment/minimal-lsx-child.git"
+    "url": "git+https://github.com/lightspeeddevelopment/minimal-lsx.git"
   },
   "keywords": [
     "lsx",
@@ -16,7 +16,7 @@
   "author": "LightSpeed",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/lightspeeddevelopment/minimal-lsx-child/issues"
+    "url": "https://github.com/lightspeeddevelopment/minimal-lsx/issues"
   },
   "dependencies": {
     "gulp": "^3.9.1",

@@ -1,11 +1,11 @@
 /**
  * MINIMAL scripts.
  *
- * @package    minimal-lsx-child
+ * @package    minimal-lsx
  * @subpackage scripts
  */
 
-var lsx_minimal = Object.create( null );
+var minimal_lsx = Object.create( null );
 
 ;( function( $, window, document, undefined ) {
 
@@ -19,10 +19,10 @@ var lsx_minimal = Object.create( null );
 	/**
 	 * Create homepage banner Slick Slider
 	 *
-	 * @package    minimal-lsx-child
+	 * @package    minimal-lsx
 	 * @subpackage scripts
 	 */
-	lsx_minimal.create_homepage_slick_slider = function() {
+	minimal_lsx.create_homepage_slick_slider = function() {
 		$( '.minimal-slider' ).slick({
 			draggable: false,
 			infinite: true,
@@ -49,10 +49,10 @@ var lsx_minimal = Object.create( null );
 	/**
 	 * Update testimonials slick slider (remove arrows)
 	 *
-	 * @package    minimal-lsx-child
+	 * @package    minimal-lsx
 	 * @subpackage scripts
 	 */
-	lsx_minimal.update_testimonials_slick_slider = function() {
+	minimal_lsx.update_testimonials_slick_slider = function() {
 		var $testimonialSlider = $( '#lsx-testimonials-slider' );
 		$testimonialSlider.slick( 'slickSetOption', 'arrows', false, true );
 	};
@@ -60,13 +60,13 @@ var lsx_minimal = Object.create( null );
 	/**
 	 * On document ready.
 	 *
-	 * @package    minimal-lsx-child
+	 * @package    minimal-lsx
 	 * @subpackage scripts
 	 */
 	$document.ready( function() {
 
-		lsx_minimal.create_homepage_slick_slider();
-		lsx_minimal.update_testimonials_slick_slider();
+		minimal_lsx.create_homepage_slick_slider();
+		minimal_lsx.update_testimonials_slick_slider();
 
 	} );
 

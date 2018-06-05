@@ -2,7 +2,7 @@
 /**
  * The main template file.
  *
- * @package minimal-lsx-child
+ * @package minimal-lsx
  */
 get_header(); ?>
 

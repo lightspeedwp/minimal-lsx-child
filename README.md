@@ -1,5 +1,5 @@
 [![built with gulp.js](https://img.shields.io/badge/built%20with-gulp.js-green.svg)](http://gulpjs.com/)
-[![build status](https://travis-ci.org/lightspeeddevelopment/minimal-lsx-child.svg?branch=master)](https://travis-ci.org/lightspeeddevelopment/minimal-lsx-child)
+[![build status](https://travis-ci.org/lightspeeddevelopment/minimal-lsx.svg?branch=master)](https://travis-ci.org/lightspeeddevelopment/minimal-lsx)
 
 # MINIMAL LSX
 

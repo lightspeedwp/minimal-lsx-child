@@ -2,12 +2,12 @@
 /**
  * New colours scheme.
  *
- * @package     minimal-lsx-child
+ * @package     minimal-lsx
  * @subpackage	lsx-customizer
  */
-function lsx_minimal_customizer_colour_choices( $array ) {
+function minimal_lsx_customizer_colour_choices( $array ) {
 	$array['minimal'] = array(
-		'label'  => __( 'MINIMAL', 'minimal-lsx-child' ),
+		'label'  => __( 'MINIMAL', 'minimal-lsx' ),
 
 		'colors' => array(
 			'button_background_color'       => '#FFFFFF',
@@ -88,17 +88,17 @@ function lsx_minimal_customizer_colour_choices( $array ) {
 	return $array;
 }
 
-add_filter( 'lsx_customizer_colour_choices', 'lsx_minimal_customizer_colour_choices', 11 );
+add_filter( 'lsx_customizer_colour_choices', 'minimal_lsx_customizer_colour_choices', 11 );
 
 /**
  * Handle body colours that might be change by LSX Customiser.
  *
- * @package     minimal-lsx-child
+ * @package     minimal-lsx
  * @subpackage	lsx-customizer
  */
-function lsx_minimal_customizer_colour_selectors_body( $css, $colors ) {
+function minimal_lsx_customizer_colour_selectors_body( $css, $colors ) {
 	$css .= '
-		@import "' . LSX_MINIMAL_PATH . '/assets/css/scss/customizer-colours";
+		@import "' . MINIMAL_LSX_PATH . '/assets/css/scss/customizer-colours";
 
 		/**
 		 * LSX Customizer - Body (MINIMAL)
@@ -118,17 +118,17 @@ function lsx_minimal_customizer_colour_selectors_body( $css, $colors ) {
 	return $css;
 }
 
-add_filter( 'lsx_customizer_colour_selectors_body', 'lsx_minimal_customizer_colour_selectors_body', 15, 2 );
+add_filter( 'lsx_customizer_colour_selectors_body', 'minimal_lsx_customizer_colour_selectors_body', 15, 2 );
 
 /**
  * Handle body colours that might be change by LSX Customiser.
  *
- * @package     minimal-lsx-child
+ * @package     minimal-lsx
  * @subpackage	lsx-customizer
  */
-function lsx_minimal_customizer_colour_selectors_button( $css, $colors ) {
+function minimal_lsx_customizer_colour_selectors_button( $css, $colors ) {
 	$css .= '
-		@import "' . LSX_MINIMAL_PATH . '/assets/css/scss/customizer-colours";
+		@import "' . MINIMAL_LSX_PATH . '/assets/css/scss/customizer-colours";
 
 		/**
 		 * LSX Customizer - Button (MINIMAL)
@@ -141,4 +141,4 @@ function lsx_minimal_customizer_colour_selectors_button( $css, $colors ) {
 	return $css;
 }
 
-add_filter( 'lsx_customizer_colour_selectors_button', 'lsx_minimal_customizer_colour_selectors_button', 15, 2 );
+add_filter( 'lsx_customizer_colour_selectors_button', 'minimal_lsx_customizer_colour_selectors_button', 15, 2 );
