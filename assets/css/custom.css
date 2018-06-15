@@ -270,4 +270,6 @@ a img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 
 .screen-reader-text:focus { background-color: #eee; clip: auto !important; -webkit-clip-path: none; clip-path: none; color: #444; display: block; font-size: 1em; height: auto; left: 5px; line-height: normal; padding: 15px 23px 14px; text-decoration: none; top: 5px; width: auto; z-index: 100000; /* Above WP toolbar. */ }
 
+.home.page-has-banner .minimal-slider { display: none; }
+
 /*# sourceMappingURL=maps/custom.css.map */

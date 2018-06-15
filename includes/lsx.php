@@ -18,10 +18,12 @@ add_filter( 'lsx_credit_link', 'minimal_lsx_credit_link', 11 );
  * @package     minimal-lsx
  * @subpackage	lsx-customizer
  */
-function minimal_lsx_homepage_banner() {
-	if ( is_front_page() ) {
-		include locate_template( array( 'partials/homepage-slider.php' ) );
-	}
-}
 
+if ( ! function_exists( 'minimal_lsx_homepage_banner' ) ) :
+	function minimal_lsx_homepage_banner() {
+		if ( is_front_page() ) {
+			include locate_template( array( 'partials/homepage-slider.php' ) );
+			}
+	}
+endif;
 add_action( 'lsx_header_after', 'minimal_lsx_homepage_banner' );
