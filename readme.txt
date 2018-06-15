@@ -1,5 +1,5 @@
 MINIMAL LSX
-Theme Version: 1.1.3
+Theme Version: 1.1.4
 Author: LightSpeed 
 Author URL: https://www.lsdev.biz/
 
