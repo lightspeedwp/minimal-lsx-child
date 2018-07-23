@@ -14,11 +14,11 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: includes/class-lsx-minimal-widget-posts.php:16
+#: includes/class-minimal-lsx-widget-posts.php:16
 msgid "MINIMAL Posts"
 msgstr ""
 
-#: includes/class-lsx-minimal-widget-posts.php:45
+#: includes/class-minimal-lsx-widget-posts.php:45
 msgid "Title:"
 msgstr ""
 

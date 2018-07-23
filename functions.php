@@ -22,7 +22,7 @@ define( 'MINIMAL_LSX_VER', '1.0.0' );
  */
 require_once( 'includes/lsx.php' );
 require_once( 'includes/lsx-customizer.php' );
-require_once( 'includes/class-lsx-minimal-widget-posts.php' );
+require_once( 'includes/class-minimal-lsx-widget-posts.php' );
 
 /**
  * Sets up theme defaults.
