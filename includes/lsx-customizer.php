@@ -142,3 +142,26 @@ function minimal_lsx_customizer_colour_selectors_button( $css, $colors ) {
 }
 
 add_filter( 'lsx_customizer_colour_selectors_button', 'minimal_lsx_customizer_colour_selectors_button', 15, 2 );
+
+
+/**
+ * Handle slider switch by LSX Customiser.
+ *
+ * @package     minimal-lsx
+ * @subpackage  lsx-customizer
+ */
+function minimal_lsx_customizer_slider_button( $lsx_controls ) {
+	$lsx_controls['settings']['lsx_slider_on'] = array(
+		'default'           => false,
+		'sanitize_callback' => 'lsx_sanitize_checkbox',
+		'transport'         => 'postMessage',
+	);
+	$lsx_controls['fields']['lsx_slider_on'] = array(
+		'label'   => esc_html__( 'Remove Home Demo Slider', 'lsx' ),
+		'section' => 'lsx-layout',
+		'type'    => 'checkbox',
+	);
+	return $lsx_controls;
+}
+
+add_filter( 'lsx_customizer_controls', 'minimal_lsx_customizer_slider_button', 15, 2 );
