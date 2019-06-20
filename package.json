@@ -19,6 +19,7 @@
     "url": "https://github.com/lightspeeddevelopment/minimal-lsx/issues"
   },
   "dependencies": {
+    "clean-css": "^4.1.11",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-concat": "^2.6.1",
@@ -36,6 +37,7 @@
     "gulp-wp-pot": "^2.3.1",
     "hoek": "^4.2.1",
     "jshint": "^2.9.6",
-    "map-stream": "^0.0.7"
+    "map-stream": "^0.0.7",
+    "shelljs": "^0.8.3"
   }
 }
