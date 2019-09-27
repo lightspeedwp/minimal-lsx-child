@@ -38,6 +38,7 @@
     "hoek": "^4.2.1",
     "jshint": "^2.9.6",
     "map-stream": "^0.0.7",
+    "set-value": "^2.0.1",
     "shelljs": "^0.8.3"
   }
 }
