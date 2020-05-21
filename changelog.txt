@@ -1,4 +1,0 @@
-## Changelog
-
-### 1.1.4 - 06/07/17
-* First Version

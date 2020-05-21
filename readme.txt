@@ -1,5 +1,5 @@
 MINIMAL LSX
-Theme Version: 1.1.5
+Theme Version: 1.1.6
 Author: LightSpeed 
 Author URL: https://www.lsdev.biz/
 
@@ -14,7 +14,7 @@ Minimal LSX is an LSX Child Theme. It has a clean, minimal design.
 === Copyright ===
 --------------------
 
-Minimal LSX Theme, Copyright 2018 LightSpeed.
+Minimal LSX Theme, Copyright 2020 LightSpeed.
 Minimal LSX is distributed under the terms of the GNU General Public License v3.
 
 

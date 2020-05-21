@@ -5,17 +5,6 @@
 
 MINIMAL LSX Child Theme.
 
-## Changelog
-
-### 1.1.5
-- Adding option in customizer to turn off the home demo slider
-
-### 1.1.3 
-- Wordpress Ready
-
-### 1.0.0 - 06/07/17
-- First Version
-
 ## Setup
 
 ### 1: Install NPM

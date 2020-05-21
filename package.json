@@ -19,8 +19,8 @@
     "url": "https://github.com/lightspeeddevelopment/minimal-lsx/issues"
   },
   "dependencies": {
-    "clean-css": "^4.1.11",
-    "gulp": "^4.0.0",
+    "clean-css": "^4.2.3",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-concat": "^2.6.1",
     "gulp-gettext": "^0.3.0",
@@ -28,17 +28,20 @@
     "gulp-minify-css": "^1.2.4",
     "gulp-plumber": "^1.2.0",
     "gulp-rename": "^1.2.3",
-    "gulp-rtlcss": "^1.2.0",
+    "gulp-rtlcss": "^1.4.1",
     "gulp-sass": "^3.2.1",
     "gulp-sort": "^2.0.0",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^2.0.1",
     "gulp-util": "^3.0.8",
-    "gulp-wp-pot": "^2.3.1",
+    "gulp-wp-pot": "^2.4.2",
     "hoek": "^4.2.1",
-    "jshint": "^2.9.6",
+    "jshint": "^2.11.1",
     "map-stream": "^0.0.7",
     "set-value": "^2.0.1",
-    "shelljs": "^0.8.3"
+    "shelljs": "^0.8.4"
+  },
+  "devDependencies": {
+    "minimist": "^1.2.5"
   }
 }
