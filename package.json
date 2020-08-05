@@ -42,6 +42,6 @@
     "shelljs": "^0.8.4"
   },
   "devDependencies": {
-    "minimist": "^1.2.5"
+    "minimist": "1.2.5"
   }
 }
