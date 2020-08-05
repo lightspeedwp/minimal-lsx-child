@@ -38,7 +38,7 @@
     "hoek": "^4.2.1",
     "jshint": "^2.11.1",
     "map-stream": "^0.0.7",
-    "set-value": "^2.0.1",
+    "set-value": "^3.0.2",
     "shelljs": "^0.8.4"
   },
   "devDependencies": {
