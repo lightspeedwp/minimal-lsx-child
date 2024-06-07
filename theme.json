@@ -8,37 +8,37 @@
 							"fontFamily": "\"Playfair Display\"",
 							"fontStyle": "normal",
 							"fontWeight": "500",
-							"src": "https://demo.lsx.design/wp-content/uploads/fonts/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKd3vUDVZNLo_U2r.woff2"
+							"src": "file:./assets/fonts/playfair-display/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKd3vUDVZNLo_U2r.woff2"
 						},
 						{
 							"fontFamily": "\"Playfair Display\"",
 							"fontStyle": "normal",
 							"fontWeight": "600",
-							"src": "https://demo.lsx.design/wp-content/uploads/fonts/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKebukDVZNLo_U2r.woff2"
+							"src": "file:./assets/fonts/playfair-display/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKebukDVZNLo_U2r.woff2"
 						},
 						{
 							"fontFamily": "\"Playfair Display\"",
 							"fontStyle": "normal",
 							"fontWeight": "400",
-							"src": "https://demo.lsx.design/wp-content/uploads/fonts/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvUDVZNLo_U2r.woff2"
+							"src": "file:./assets/fonts/playfair-display/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvUDVZNLo_U2r.woff2"
 						},
 						{
 							"fontFamily": "\"Playfair Display\"",
 							"fontStyle": "normal",
 							"fontWeight": "700",
-							"src": "https://demo.lsx.design/wp-content/uploads/fonts/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKeiukDVZNLo_U2r.woff2"
+							"src": "file:./assets/fonts/playfair-display/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKeiukDVZNLo_U2r.woff2"
 						},
 						{
 							"fontFamily": "\"Playfair Display\"",
 							"fontStyle": "normal",
 							"fontWeight": "800",
-							"src": "https://demo.lsx.design/wp-content/uploads/fonts/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfFukDVZNLo_U2r.woff2"
+							"src": "file:./assets/fonts/playfair-display/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfFukDVZNLo_U2r.woff2"
 						},
 						{
 							"fontFamily": "\"Playfair Display\"",
 							"fontStyle": "normal",
 							"fontWeight": "900",
-							"src": "https://demo.lsx.design/wp-content/uploads/fonts/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfsukDVZNLo_U2r.woff2"
+							"src": "file:./assets/fonts/playfair-display/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfsukDVZNLo_U2r.woff2"
 						}
 					],
 					"fontFamily": "\"Playfair Display\", serif",
@@ -51,31 +51,31 @@
 							"fontFamily": "Lato",
 							"fontStyle": "normal",
 							"fontWeight": "300",
-							"src": "https://minimal.lsx.design/wp-content/uploads/fonts/S6u9w4BMUTPHh7USewqFGC_p9dw.woff2"
+							"src": "file:./assets/fonts/lato/S6u9w4BMUTPHh7USewqFGC_p9dw.woff2"
 						},
 						{
 							"fontFamily": "Lato",
 							"fontStyle": "normal",
 							"fontWeight": "100",
-							"src": "https://minimal.lsx.design/wp-content/uploads/fonts/S6u8w4BMUTPHh30wXiWrFCbw7A.woff2"
+							"src": "file:./assets/fonts/lato/S6u8w4BMUTPHh30wXiWrFCbw7A.woff2"
 						},
 						{
 							"fontFamily": "Lato",
 							"fontStyle": "normal",
 							"fontWeight": "400",
-							"src": "https://demo.lsx.design/wp-content/uploads/fonts/S6uyw4BMUTPHvxw6XweuBCY.woff2"
+							"src": "file:./assets/fonts/lato/S6uyw4BMUTPHvxw6XweuBCY.woff2"
 						},
 						{
 							"fontFamily": "Lato",
 							"fontStyle": "normal",
 							"fontWeight": "700",
-							"src": "https://demo.lsx.design/wp-content/uploads/fonts/S6u9w4BMUTPHh6UVewqFGC_p9dw.woff2"
+							"src": "file:./assets/fonts/lato/S6u9w4BMUTPHh6UVewqFGC_p9dw.woff2"
 						},
 						{
 							"fontFamily": "Lato",
 							"fontStyle": "normal",
 							"fontWeight": "900",
-							"src": "https://demo.lsx.design/wp-content/uploads/fonts/S6u9w4BMUTPHh50XewqFGC_p9dw.woff2"
+							"src": "file:./assets/fonts/lato/S6u9w4BMUTPHh50XewqFGC_p9dw.woff2"
 						}
 					],
 					"fontFamily": "Lato, sans-serif",
